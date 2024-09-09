@@ -1,0 +1,269 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark gray text for readability */
+    background: #f4f4f9; /* Very light grey background for the entire page */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/background-image.jpeg");
+    background-size: cover;
+    color: #fff; /* White text for contrast on the dark header */
+    padding-top: 50px;
+    min-height: 400px;
+    text-align: center;
+    border-bottom: #4a4a4a 3px solid; /* Dark gray border */
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff; /* White text for contrast on dark header */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease, background-color 0.3s ease, padding 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.nav-links a:hover {
+    color: #d1c4e9; /* Light purple text color on hover */
+    background-color: #4a148c; /* Dark purple background on hover */
+    padding: 5px 10px; /* Adds padding on hover to create a button-like effect */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Section Styling */
+section {
+    padding: 50px 0;
+    background: #e9e9ee; /* Light grey background for sections */
+    border-bottom: 1px solid #d0d0d0; /* Light grey border */
+}
+
+#about, #projects, #contact {
+    text-align: center;
+}
+
+h2 {
+    color: #4a148c; /* Dark purple for headings */
+    margin-bottom: 20px;
+    padding-bottom: 10px; /* Add space below headings */
+    font-size: 2em; /* Increase font size for headings */
+    border-bottom: 2px solid #7e57c2; /* Medium purple bottom border */
+    width: max-content; /* Make border fit the text width */
+    margin: 0 auto 40px; /* Center headings and add margin */
+}
+
+/* Subheading Styling */
+.subheading {
+    margin-top: 40px; /* Space above subheadings */
+    margin-bottom: 30px; /* Space below subheadings */
+    padding: 10px 0; /* Padding above and below subheadings */
+    font-size: 1.8em; /* Increase font size for subheadings */
+    color: #6a1b9a; /* Medium purple for subheadings */
+    border-bottom: 2px solid #d1c4e9; /* Light purple underline */
+    width: fit-content; /* Make border fit the text width */
+    margin-left: auto; /* Center subheadings */
+    margin-right: auto; /* Center subheadings */
+}
+
+/* Image Styling */
+.profile-img, .project-img {
+    width: 250px; /* Slightly larger for better visibility */
+    height: 250px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding transition for depth effect */
+}
+
+.profile-img:hover, .project-img:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover for depth effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adds shadow on hover */
+}
+
+
+/* Project Styling */
+.project {
+    background: #ece5f0; /* Light grey-purple background for project cards */
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding transition for depth effect */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover for depth effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adds shadow on hover */
+}
+
+/*Blog Styling*/
+.dropdown {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    appearance: none; /* Removes default styling for dropdowns */
+    cursor: pointer;
+}
+
+.dropdown:hover {
+    border-color: #007bff;
+}
+
+.dropdown:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: auto;
+    background: #e9e9ee; /* Light grey form background */
+    padding: 20px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease; /* Adding transition for depth effect */
+}
+
+form:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow on hover */
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #b0b0b0; /* Medium gray border for inputs */
+    border-radius: 4px;
+    background: #f5f5f5; /* Light gray background for input fields */
+    color: #333; /* Dark gray text for inputs */
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #6a1b9a; /* Medium purple button background */
+    border: none;
+    color: #fff; /* White text for contrast */
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.3s ease; /* Adding transition for depth effect */
+}
+
+form button:hover {
+    background: #4a148c; /* Darker purple hover effect */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+
+/* Footer Styling */
+footer {
+    background: #4a148c; /* Dark purple footer background for better contrast */
+    color: #e5e5e5; /* Light gray text for better visibility */
+    text-align: center;
+    padding: 20px 0; /* Increased padding for better visual appearance */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow to create a lifted effect */
+}
+
+footer .social-links a {
+    color: #e5e5e5; /* Light gray text for social links */
+    margin: 0 10px;
+    font-size: 1.5em; /* Increased icon size for better visibility */
+    transition: color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    padding: 5px; /* Adds padding for click effect */
+    border-radius: 50%; /* Rounded corners for icon container */
+}
+
+footer .social-links a:hover {
+    color: #ffd700; /* Gold color on hover for better contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
+}
+
+footer .social-links a:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly reduces shadow on active click */
+    transition: box-shadow 0.1s ease; /* Quick transition for click effect */
+}
+
+
+
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+.slide-in {
+    animation: slideIn 1s ease-out;
+}
+
+.zoom-in {
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
