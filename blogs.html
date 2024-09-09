@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - Tech Stack Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Blog Container Styling */
+        .blog-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Header Styling */
+        .blog-container h1 {
+            font-size: 2.5em;
+            color: #007BFF;
+            margin-bottom: 20px;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        /* Paragraph and List Styling */
+        .blog-container p, .blog-container ul {
+            font-size: 1.1em;
+            line-height: 1.6;
+            animation: fadeInUp 1.2s ease-in-out;
+        }
+
+        .blog-container ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .blog-container ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .blog-container ul li:before {
+            content: '\f0da';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #007BFF;
+        }
+
+        /* Back Button Styling */
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-container">
+        <h1>Tech Stack Used for Creating This Website</h1>
+        <p>This website was built using the following technologies:</p>
+        <ul>
+            <li><strong>HTML</strong>: Used for structuring the content of the webpage.</li>
+            <li><strong>CSS</strong>: Utilized for styling the webpage and ensuring a responsive design.</li>
+            <li><strong>JavaScript</strong>: Enabled dynamic interactions and animations across the website.</li>
+            <li><strong>Font Awesome</strong>: Integrated for adding vector icons and social media links.</li>
+            <li><strong>Responsive Design Techniques</strong>: Ensured the website looks good on all devices, using CSS media queries and flexible grid layouts.</li>
+        </ul>
+        <p>By leveraging these technologies, the website provides a smooth and visually appealing experience. Feel free to explore the source code to understand how these technologies were applied.</p>
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+</body>
+</html>
