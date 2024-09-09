@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Tech Stack</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #4A4A4A;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #555555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        ul li {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f4f4f9;
+            border-radius: 5px;
+            cursor: pointer; /* Cursor changes to pointer to indicate clickable items */
+            transition: background-color 0.3s ease;
+        }
+
+        ul li:hover {
+            background-color: #e0e0e5; /* Change background on hover for better UX */
+        }
+
+        .technology-description {
+            display: none; /* Hide descriptions by default */
+            text-align: left;
+            margin-top: 10px;
+            font-size: 1em;
+            color: #444444;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #007BFF;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .section-title {
+            margin-top: 40px;
+            color: #333333;
+            font-size: 1.8em;
+            border-bottom: 2px solid #007BFF;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        footer {
+            background: #4a148c;
+            color: #e5e5e5;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer .social-links a {
+            color: #e5e5e5;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.3s ease, box-shadow 0.3s ease;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        footer .social-links a:hover {
+            color: #ffd700;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer .social-links a:active {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.1s ease;
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Tech Stack used in this Portfolio</h2>
+        <p>Click on each technology to learn more about how it is used in this project:</p>
+        <ul>
+            <li onclick="showDescription('html5')">HTML5 - For structuring the content of the website.</li>
+            <div id="html5" class="technology-description">
+                HTML5 is used in this portfolio website to structure content in a clear and meaningful way. Here's how it's applied:<br/>
+                <br/>
+
+1. **Semantic Elements**: HTML5 introduces semantic elements like `header`, `footer`, `section`, and `nav`, which define the purpose of different parts of the webpage. This makes the code more readable and organized, improving both user experience and accessibility. <br/>
+<br/>
+
+2. **Accessibility and SEO**: Using semantic tags helps assistive technologies understand the content structure, making the site more accessible to users with disabilities. It also helps search engines better index the site, improving SEO.<br/>
+<br/>
+
+3. **Simplified Markup**: HTML5 provides a simpler document structure, reducing the need for unnecessary tags and making the code cleaner and easier to maintain.<br/>
+<br/>
+
+4. **Media and Form Enhancements**: While not used in this example, HTML5 supports native audio and video embedding and provides enhanced form elements for better user interaction.<br/>
+<br/>
+
+Overall, HTML5 ensures the website is well-structured, accessible, and compatible across all modern browsers.<br/>
+<br/>
+            </div>
+
+            <li onclick="showDescription('css3')">CSS3 - For styling and layout of the website.</li>
+            <div id="css3" class="technology-description">
+                CSS3 is used in this portfolio website to enhance the styling and layout, ensuring a visually appealing and user-friendly design. Here's how it's applied:.<br/>
+<br/>
+
+                1. **Styling Elements**: CSS3 styles the website's text, buttons, and other elements, using properties like `color`, `font-family`, and `background-color` to create a cohesive visual theme..<br/>
+<br/>
+                
+                2. **Responsive Design**: With CSS3 media queries, the website is optimized for different screen sizes, making it accessible on various devices, including desktops, tablets, and smartphones..<br/>
+<br/>
+                
+                3. **Flexbox and Grid Layouts**: These CSS3 layout modules are used to create flexible and efficient layouts, allowing elements to be easily aligned and distributed within the page..<br/>
+<br/>
+                
+                4. **Animations and Transitions**: CSS3 adds animations and transitions, such as hover effects and fade-ins, enhancing user interaction and providing a more dynamic experience..<br/>
+<br/>
+                
+                Overall, CSS3 is essential for defining the website's visual style, ensuring it is both aesthetically pleasing and functionally responsive..<br/>
+<br/>
+            </div>
+
+            <li onclick="showDescription('javascript')">JavaScript - For interactive features and functionality.</li>
+            <div id="javascript" class="technology-description">
+                JavaScript is used in this portfolio website to add interactive features and enhance functionality. Here’s how it is applied:<br/>
+                <br/>
+
+                1. **Dynamic Content**: JavaScript allows the website to dynamically update content without requiring a page reload. This improves user experience by providing real-time updates and interactions.<br/>
+<br/>
+                
+                2. **Event Handling**: JavaScript is used to manage user interactions, such as clicks, form submissions, and mouse movements, enabling features like dropdown menus, modals, and alerts.<br/>
+<br/>
+                
+                3. **Animations**: JavaScript enhances visual engagement by creating and controlling animations that improve the overall interactivity of the website.<br/>
+<br/>
+                
+                4. **Form Validation**: It helps in validating user input on forms, ensuring data integrity and providing immediate feedback to users.<br/>
+<br/>
+                
+                Overall, JavaScript is crucial for creating a responsive, interactive, and user-friendly website.<br/>
+<br/>
+            </div>
+
+            <li onclick="showDescription('fontawesome')">Font Awesome - For icons and visual enhancements.</li>
+            <div id="fontawesome" class="technology-description">
+                Font Awesome is used in this portfolio website to add icons and enhance visual appeal. Here’s how it is applied:<br/>
+<br/>
+
+                1. **Icons for Navigation**: Font Awesome provides a wide range of icons that are used for social media links and buttons, making navigation intuitive and visually appealing.<br/>
+<br/>
+                
+                2. **Visual Enhancements**: Icons are used to visually differentiate and highlight important features or sections, such as contact information or social media profiles, improving user engagement and understanding.<br/>
+<br/>
+                
+                3. **Scalability**: Font Awesome icons are vector-based, ensuring they look sharp on all screen sizes and resolutions, from mobile devices to large desktop monitors.<br/>
+<br/>
+                
+                Overall, Font Awesome helps improve the website's aesthetics and user experience by providing a simple way to include scalable, visually appealing icons.<br/>
+<br/>
+            </div>
+
+            <li onclick="showDescription('bootstrap')">Bootstrap - For responsive design and pre-built components.</li>
+            <div id="bootstrap" class="technology-description">
+                1. *Responsive Design*: Bootstrap's grid system and responsive utilities ensure that web layouts adapt to different screen sizes, providing a seamless experience across desktops, tablets, and mobile devices.<br/>
+<br/>
+
+                2. *Pre-built Components*: It offers a variety of ready-to-use components like navigation bars, buttons, forms, cards, and modals, which can be easily integrated into projects.<br/>
+<br/>
+                
+                3. *Consistency*: Using Bootstrap helps maintain a consistent design and user interface across different parts of a web application.<br/>
+<br/>
+                
+                4. *Customization*: Bootstrap components can be customized using CSS classes or Sass variables to match the specific design requirements of a project.<br/>
+<br/>
+                
+                5. *Speed and Efficiency*: By leveraging pre-built elements and a well-defined grid system, Bootstrap speeds up the development process, allowing developers to focus on functionality rather than design from scratch.<br/>
+<br/>
+                
+                6. *Community and Support*: Bootstrap has a large community and extensive documentation, making it easier to find solutions and support for various design and development needs.<br/>
+<br/>
+            </div>
+        </ul>
+        <button onclick="window.location.href='index.html'">Return to Home</button>
+    </div>
+    <footer>
+        <div class="container">
+            <p class="fade-in">&copy; 2024 Trinath B Sharma. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://leetcode.com/u/trinathbsharma16/" target="_blank"><i class="fa-solid fa-code"></i> LeetCode</a> |
+                <a href="https://www.linkedin.com/in/trinath-b-sharma-7b05a0257/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> |
+                <a href="https://www.instagram.com/trinathsharma_66/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a> |
+                <a href="https://github.com/trinathbsharma16" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+            <p class="fade-in">Email: <a href="mailto:trinathbsharma16@gmail.com">trinathbsharma16@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function showDescription(id) {
+            const description = document.getElementById(id);
+            const allDescriptions = document.querySelectorAll('.technology-description');
+            allDescriptions.forEach(desc => {
+                if (desc !== description) desc.style.display = 'none';
+            });
+            description.style.display = description.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
